@@ -57,7 +57,6 @@ class VKBot {
 							$this->users[$from] = new VKUser($this, $from);
 						}
 						foreach($this->plugins as $plugin){ 
-							print("q");
 							$plugin->onLike($this->users[$from], $id, $type, $all);
 						}
 					break;
